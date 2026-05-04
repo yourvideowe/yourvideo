@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的社群短影音工作室・價目表</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--o:#C85A1E;--ob:#8B4A25;--cr:#F5F0E8;--crm:#EDE7D8;--td:#2C2218;--tm:#5A4535;--tmu:#9A8070;}
+body{background:#e8e2d8;display:flex;justify-content:center;padding:2rem 1rem;min-height:100vh;}
+.wrap{background:var(--cr);padding:2.5rem 1.75rem;font-family:'Noto Sans TC',sans-serif;max-width:780px;width:100%;border-radius:16px;}
+.top{text-align:center;margin-bottom:1.75rem;}
+.brand{font-family:'Noto Serif TC',serif;font-size:24px;font-weight:600;color:var(--td);letter-spacing:.04em;}
+.tagline{font-size:12px;color:var(--tmu);margin-top:5px;letter-spacing:.08em;}
+.service-axis{background:#fff;border-radius:12px;border:1px solid rgba(180,150,120,.18);padding:1.1rem 1.4rem;margin-bottom:1.5rem;display:flex;align-items:center;gap:1.2rem;}
+.axis-left{flex-shrink:0;border-right:2px solid var(--o);padding-right:1.2rem;}
+.axis-title{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:600;color:var(--o);line-height:1.6;white-space:nowrap;}
+.axis-right{font-size:12.5px;color:var(--tm);line-height:1.9;}
+.axis-note{font-size:11px;color:var(--tmu);margin-top:4px;}
+.ctable-wrap{background:#fff;border-radius:14px;border:1px solid rgba(180,150,120,.18);overflow:hidden;margin-bottom:1.5rem;}
+table{width:100%;border-collapse:collapse;table-layout:fixed;}
+thead tr{background:var(--crm);}
+th{padding:10px 8px;font-size:11px;font-weight:500;color:var(--tm);text-align:center;border-right:.5px solid rgba(180,150,120,.15);}
+th:first-child{text-align:left;padding-left:14px;width:26%;}
+th.hero-col{background:#FDF0E8;}
+tbody tr{border-top:.5px solid rgba(180,150,120,.1);}
+td{padding:9px 8px;font-size:12px;color:var(--tm);text-align:center;border-right:.5px solid rgba(180,150,120,.08);}
+td:first-child{text-align:left;padding-left:14px;color:var(--tmu);font-size:11.5px;}
+td.hero-col{background:#FFFAF6;}
+.plan-price{font-size:16px;font-weight:700;color:var(--o);display:block;line-height:1.2;}
+.hero-badge{display:block;font-size:9px;background:var(--o);color:#fff;border-radius:6px;padding:2px 6px;margin:0 auto 3px;width:fit-content;}
+.deliver-chip{display:inline-block;background:var(--o);color:#fff;font-size:10px;padding:2px 7px;border-radius:6px;font-weight:500;}
+.script-chip{display:inline-block;background:var(--crm);color:var(--tm);font-size:10px;padding:2px 7px;border-radius:6px;}
+.target-text{font-size:11.5px;color:var(--tm);font-weight:500;}
+.period-text{font-size:10.5px;color:var(--tm);line-height:1.6;}
+.analysis-text{font-size:10.5px;color:var(--tm);line-height:1.7;text-align:left;padding:2px 0;}
+tr.section-top td{border-top:1.5px solid rgba(180,150,120,.25) !important;}
+.sec-label{font-size:10.5px;letter-spacing:.15em;color:var(--ob);font-weight:500;text-transform:uppercase;margin-bottom:.85rem;}
+.addon-row{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-bottom:1.1rem;}
+.addon{background:#fff;border-radius:10px;border:1px dashed rgba(180,150,120,.3);padding:.9rem 1rem;}
+.pill{display:inline-block;font-size:10px;padding:2px 9px;border-radius:10px;margin-bottom:8px;font-weight:500;}
+.p-exp{background:#E8EFE9;color:#4A6B50;}
+.p-multi{background:#E6EBF5;color:#3D5A8A;}
+.addon-name{font-size:12.5px;font-weight:500;color:var(--td);margin-bottom:4px;}
+.addon-price{font-size:16px;font-weight:700;color:var(--o);}
+.addon-note{font-size:10.5px;color:var(--tmu);margin-top:5px;line-height:1.6;}
+.transport{background:var(--crm);border-radius:10px;padding:.9rem 1.1rem;margin-bottom:.5rem;}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:7px;}
+.ti{background:#fff;border-radius:7px;padding:7px 4px;text-align:center;border:.5px solid rgba(180,150,120,.15);}
+.tr2{font-size:10px;color:var(--tm);margin-bottom:3px;}
+.tf{font-size:12.5px;font-weight:600;color:var(--o);}
+.tn{font-size:9px;color:var(--tmu);margin-top:1px;}
+.foot{text-align:center;font-size:11px;color:var(--tmu);padding-top:.85rem;border-top:.5px solid rgba(180,150,120,.2);line-height:2;}
+@media print{body{background:white;padding:0;} .wrap{border-radius:0;max-width:100%;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">你的社群短影音工作室</div>
+    <div class="tagline">社群內容一條龍</div>
+  </div>
+  <div class="service-axis">
+    <div class="axis-left">
+      <div class="axis-title">腳本・拍攝<br>剪輯・字幕</div>
+    </div>
+    <div class="axis-right">
+      與你合作找到你最自然有影響力的表達方式與內容
+      <div class="axis-note">※ 本服務專注於內容製作品質，不包含額外的流量操作及社群投放</div>
+    </div>
+  </div>
+  <div class="ctable-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>試拍體驗</th>
+          <th>2025優惠升級</th>
+          <th class="hero-col">實戰製作</th>
+          <th>多人方案</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>適合對象</td>
+          <td><span class="target-text">想嘗試的人</span></td>
+          <td><span class="target-text">想撿便宜的人</span></td>
+          <td class="hero-col"><span class="target-text">想累積實力的人</span></td>
+          <td><span class="target-text">想展現豐富內容的人</span></td>
+        </tr>
+        <tr class="section-top">
+          <td>價格／次</td>
+          <td><span class="plan-price">10,000</span></td>
+          <td><span class="plan-price">14,000</span></td>
+          <td class="hero-col"><span class="hero-badge">推薦</span><span class="plan-price">28,000</span></td>
+          <td><span class="plan-price">35,000</span></td>
+        </tr>
+        <tr>
+          <td>方案有效期間</td>
+          <td><span class="period-text">2026/3 ～ 2026/12</span></td>
+          <td><span class="period-text">至 2025/12/31</span></td>
+          <td class="hero-col"><span class="period-text">2026/3 ～ 2026/6</span></td>
+          <td><span class="period-text">2026/1 ～ 2026/6</span></td>
+        </tr>
+        <tr>
+          <td>交付影片數</td>
+          <td><span class="deliver-chip">3 支</span></td>
+          <td><span class="deliver-chip">10 支</span></td>
+          <td class="hero-col"><span class="deliver-chip">10 支</span></td>
+          <td><span class="deliver-chip">10 支</span></td>
+        </tr>
+        <tr>
+          <td>腳本選單</td>
+          <td><span class="script-chip">6–10 支可選</span></td>
+          <td><span class="script-chip">10–15 支可選</span></td>
+          <td class="hero-col"><span class="script-chip">10–15 支可選</span></td>
+          <td><span class="script-chip">每人 2 支可選</span></td>
+        </tr>
+        <tr>
+          <td>最多拍攝時數</td>
+          <td>2.5 小時</td>
+          <td>5 小時</td>
+          <td class="hero-col">5 小時</td>
+          <td>5 小時</td>
+        </tr>
+        <tr>
+          <td>出鏡人數</td>
+          <td>1–2 人</td>
+          <td>1–2 人</td>
+          <td class="hero-col">1–2 人</td>
+          <td>3 人以上</td>
+        </tr>
+        <tr>
+          <td>內容分析報告</td>
+          <td><div class="analysis-text">製作後調整分析</div></td>
+          <td><div class="analysis-text">製作前聚焦分析<br>製作後調整分析</div></td>
+          <td class="hero-col"><div class="analysis-text">製作前聚焦分析<br>製作後調整分析</div></td>
+          <td><div class="analysis-text">製作前聚焦分析<br>製作後調整分析</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="sec-label">加購方案</div>
+  <div class="addon-row">
+    <div class="addon">
+      <span class="pill p-exp" style="margin-bottom:7px;display:inline-block;">加購・影片</span>
+      <div class="addon-name">多元內容 — 形象 vlog</div>
+      <div><span class="addon-price">5,000 元</span> <span style="font-size:11px;color:var(--tmu);">/ 3 支</span></div>
+      <div class="addon-note">至少 3 種風格・限購乙組・簽約時確認</div>
+    </div>
+    <div class="addon">
+      <span class="pill p-multi" style="margin-bottom:7px;display:inline-block;">加購・輪播</span>
+      <div class="addon-name">多元內容 — 社群輪播</div>
+      <div><span class="addon-price">5,000 元</span> <span style="font-size:11px;color:var(--tmu);">/ 3 組</span></div>
+      <div class="addon-note">至少 3 種主題方向・限購乙組・簽約時確認</div>
+    </div>
+  </div>
+  <div class="transport">
+    <div style="font-size:11.5px;font-weight:500;color:var(--tm);">車馬費</div>
+    <div class="tgrid">
+      <div class="ti"><div class="tr2">新竹以北</div><div class="tf">免費</div><div class="tn">大台北・桃竹</div></div>
+      <div class="ti"><div class="tr2">新竹以南至嘉義</div><div class="tf">+3,000</div><div class="tn">台中・彰化・嘉義</div></div>
+      <div class="ti"><div class="tr2">嘉義以南至高雄</div><div class="tf">+5,000</div><div class="tn">台南・高雄</div></div>
+      <div class="ti"><div class="tr2">東部・宜蘭</div><div class="tf">暫停服務</div><div class="tn">—</div></div>
+    </div>
+  </div>
+  <div class="foot">所有方案均含 腳本規劃・現場拍攝・後製剪輯・字幕・內容分析<br>每月交付・後製以拍攝日起算 30–45 工作天</div>
+</div>
+</body>
+</html>
